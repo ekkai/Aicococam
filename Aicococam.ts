@@ -1,9 +1,8 @@
 /** 
  * @n [Get the module here](https://github.com/ekkai/aicococam)
- * @n Aicococam is an easy-to-use AI vision sensor with six built-in functions: face recognition, object tracking, object recognition, line tracking, color recognition, and label (qr code) recognition. 
+ * @n Aicococam is an easy-to-use AI vision sensor with eight built-in functions: face recognition, digit recognition, mask recognition, object tracking, object recognition, line tracking, color recognition, and label (qr code) recognition.
  * Only one button is needed to complete the AI training, which can get rid of tedious training and complicated visual algorithm and help users stay focused on the conception and implementation of the project.
  * 
- * @copyright    [DFRobot](http://www.dfrobot.com), 2016
  * @copyright    MIT Lesser General Public License
  * 
  * @author [email](contents@kocoa.or.kr)
@@ -127,8 +126,6 @@ enum protocolAlgorithm {
     ALGORITHM_MASK_RECOGNITION = 7,
     //%block="숫자 인식"
     ALGORITHM_DIGIT_RECOGNITION = 8,
-    //%block="모델 학습"
-    OBJECTCLASSIFICATION,
 }
 
 
