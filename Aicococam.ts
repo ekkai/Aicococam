@@ -9,58 +9,58 @@
  * @date  2020-3-17
 */
 enum Content1 {
-    //% block="박스 중앙 X좌표"
+    //% block="X center"
     xCenter = 1,
-    //% block="박스 중앙 Y좌표"
+    //% block="Y center"
     yCenter = 2,
-    //% block="너비"
+    //% block="width"
     width = 3,
-    //% block="높이"
+    //% block="height"
     height = 4
 }
 
 enum Content2 {
-    //% block="시작점 X"
+    //% block="X beginning"
     xOrigin = 1,
-    //% block="시작점 Y"
+    //% block="Y beginning"
     yOrigin = 2,
-    //% block="끝점 X"
+    //% block="X endpoint"
     xTarget = 3,
-    //% block="끝점 Y"
+    //% block="Y endpoint"
     yTarget = 4
 }
 
 enum Content3 {
-    //% block="아이디"
+    //% block="ID"
     ID = 5,
-    //% block="박스 중앙 X좌표"
+    //% block="X center"
     xCenter = 1,
-    //% block="박스 중앙 Y좌표"
+    //% block="Y center"
     yCenter = 2,
-    //% block="너비"
+    //% block="width"
     width = 3,
-    //% block="높이"
+    //% block="height"
     height = 4
 }
 
 enum Content4 {
-    //% block="아이디"
+    //% block="ID"
     ID = 5,
-    //% block="시작점 X"
+    //% block="X beginning"
     xOrigin = 1,
-    //% block="시작점 Y"
+    //% block="Y beginning"
     yOrigin = 2,
-    //% block="끝점 X"
+    //% block="X endpoint"
     xTarget = 3,
-    //% block="끝점 Y"
+    //% block="Y endpoint"
     yTarget = 4
 
 }
 
 enum COCOCAMResultType_t {
-    //%block="프레임"
+    //%block="frame"
     COCOCAMResultBlock = 1,
-    //%block="화살표"
+    //%block="arrow"
     COCOCAMResultArrow = 2,
 }
 
@@ -74,15 +74,15 @@ let FIRST = {
 };
 
 enum COCOCAMMode {
-    //%block="저장"
+    //%block="save"
     SAVE,
-    //%block="불러오기"
+    //%block="load"
     LOAD,
 }
 enum COCOCAMphoto {
-    //%block="사진"
+    //%block="photo"
     PHOTO,
-    //%block="스크린샷"
+    //%block="screenshot"
     SCREENSHOT
 }
 enum protocolCommand {
