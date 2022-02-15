@@ -10,9 +10,9 @@
  * @date  2020-3-17
 */
 enum Content1 {
-    //% block="x center"
-    xCenter = 1,
     //% block="박스 중앙 X좌표"
+    xCenter = 1,
+    //% block="박스 중앙 Y좌표"
     yCenter = 2,
     //% block="너비"
     width = 3,
