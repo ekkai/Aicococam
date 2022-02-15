@@ -1,4 +1,3 @@
-
 Aicococam.initMode(protocolAlgorithm.ALGORITHM_OBJECT_TRACKING)
 basic.forever(function () {
     Aicococam.request()
