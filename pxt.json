@@ -1,0 +1,27 @@
+{
+    "name": "Aicococam",
+    "version": "1.0.3",
+    "description": "코코아팹의 Aicococam입니다.",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "Aicococam.ts",
+        "i2c.cpp",
+        "shims.d.ts",
+        "enums.d.ts",
+        "tutorial-info-cache.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "4.0.17",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
