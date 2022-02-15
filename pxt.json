@@ -1,6 +1,6 @@
 {
     "name": "Aicococam",
-    "version": "1.0.3",
+    "version": "0.0.0",
     "description": "코코아팹의 Aicococam입니다.",
     "dependencies": {
         "core": "*"
