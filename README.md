@@ -69,7 +69,7 @@ MIT
 
 제품에 관한 문의는 ``||02-3470-2829||`` 또는 [minierz@kocoa.or.kr](mailto:minierz@kocoa.or.kr)를 통해 문의 부탁드립니다.
 
-For product inquiries, please contact `|02-3470-2829||` or [minierz@kocoa.or.kr] (mail to: minierz@kocoa.or.kr).
+For product inquiries, please contact ``||02-3470-2829||`` or [minierz@kocoa.or.kr](mailto:minierz@kocoa.or.kr).
 　
 
 코코아팹 공식 스토어 바로가기 → [코코아팹 스마트 스토어](https://smartstore.naver.com/kocoafab)
