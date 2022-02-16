@@ -124,7 +124,7 @@ enum protocolAlgorithm {
     ALGORITHM_OBJECT_CLASSIFICATION = 6,
     //%block="Mask Recognition"
     ALGORITHM_MASK_RECOGNITION = 7,
-    //%block="digit Recognition"
+    //%block="Digit Recognition"
     ALGORITHM_DIGIT_RECOGNITION = 8,
 }
 
