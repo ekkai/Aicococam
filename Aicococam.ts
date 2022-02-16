@@ -108,23 +108,23 @@ enum protocolCommand {
 }
 
 enum protocolAlgorithm {
-    //%block="얼굴 인식"
+    //%block="Face Recognition"
     ALGORITHM_FACE_RECOGNITION = 0,
-    //%block="사물 추적"
+    //%block="Object Tracking"
     ALGORITHM_OBJECT_TRACKING = 1,
-    //%block="사물 인식"
+    //%block="Object Recognition"
     ALGORITHM_OBJECT_RECOGNITION = 2,
-    //%block="라인 추적"
+    //%block="Line Tracking"
     ALGORITHM_LINE_TRACKING = 3,
-    //%block="컬러 인식"
+    //%block="Color Recognition"
     ALGORITHM_COLOR_RECOGNITION = 4,
-    //%block="태그 인식"
+    //%block="Tag Recognition"
     ALGORITHM_TAG_RECOGNITION = 5,
-    //%block="모델 분류"
+    //%block="Object Classification"
     ALGORITHM_OBJECT_CLASSIFICATION = 6,
-    //%block="마스크 인식"
+    //%block="Mask Recognition"
     ALGORITHM_MASK_RECOGNITION = 7,
-    //%block="숫자 인식"
+    //%block="digit Recognition"
     ALGORITHM_DIGIT_RECOGNITION = 8,
 }
 
@@ -169,7 +169,7 @@ namespace Aicococam {
     /**
      * 코코캠을 I2C통신으로 연결하여 사용합니다
      */
-    //%block="코코캠을 I2C통신으로 연결하기"
+    //%block="Aicococam initialize I2C until success"
     //% weight=90
     export function initI2c(): void {
         init();
@@ -180,7 +180,7 @@ namespace Aicococam {
     /**
      * 코코캠의 모드를 지정한 모드로 변경합니다.
      */
-    //%block="코코캠의 화면을 %mode 로 전환하기"
+    //%block="Aicococam switch algorithm to %mode"
     //% weight=85
     export function initMode(mode: protocolAlgorithm) {
         writeAlgorithm(mode, protocolCommand.COMMAND_REQUEST_ALGORITHM)
@@ -191,7 +191,7 @@ namespace Aicococam {
      * 코코캠에 저장되어 있는 데이터를 읽어옵니다.
      */
 
-    //% block="코코캠에서 데이터 읽어오기"
+    //% block="Aicococam request data once and save into the result"
     //% weight=80
     export function request(): void {
         protocolWriteCommand(protocolCommand.COMMAND_REQUEST)
@@ -200,7 +200,7 @@ namespace Aicococam {
     /**
      * 코코캠에 학습된 결과의 개수를 읽어옵니다.
      */
-    //%block="코코캠에 학습된 결과 갯수"
+    //%block="Aicococam get a total number of learned IDs from the result"
     //% weight=79
     export function getIds(): number {
         return Protocol_t[2];
@@ -208,7 +208,7 @@ namespace Aicococam {
     /**
      * 코코캠에 학습된 박스나 화살표가 인식되면
      */
-    //%block="코코캠에서 화면에 %Ht 이(가) 인식되면"
+    //%block="Aicococam check if %Ht is on screen from the result"
     //% weight=78
     export function isAppear_s(Ht: COCOCAMResultType_t): boolean {
         switch (Ht) {
@@ -223,7 +223,7 @@ namespace Aicococam {
     /**
      * 코코캠의 화면 중앙과 가장 가까이 있는 박스의 데이터를 읽어옵니다.
      */
-    //% block="코코캠의 화면 중앙에 가장 가까이 있는 %data 값"
+    //% block="Aicococam get %data of frame closest to the center of screen from the result"
     //% weight=77
     export function readBox_s(data: Content3): number {
         let coco_x
@@ -249,7 +249,7 @@ namespace Aicococam {
      * 지정한 ID가 코코캠에 학습되어 있는지의 여부를 판별합니다.
      * @param id to id ,eg: 1
      */
-    //% block="코코캠에 ID %id 이(가) 학습되어 있다면"
+    //% block="Aicococam check if ID %id is learned from the result"
     //% weight=76
     export function isLearned(id: number): boolean {
         let coco_x = countLearnedIDs();
@@ -260,7 +260,7 @@ namespace Aicococam {
      * 코코캠 화면에 지정한 ID의 프레임이 있는지 판별합니다.
      * @param id to id ,eg: 1
      */
-    //% block="코코캠 화면에 ID %id 의 프레임이 있다면"
+    //% block="Aicococam check if ID %id %Ht is on screen from the result"
     //% weight=75
     export function isAppear(id: number, Ht: COCOCAMResultType_t.COCOCAMResultBlock): boolean {
         switch (Ht) {
@@ -276,7 +276,7 @@ namespace Aicococam {
      * 지정한 ID를 가진 박스의 정보를 읽어옵니다.
      * @param id to id ,eg: 1
      */
-    //%block="ID $id 박스의 $number1 값"
+    //%block="Aicococam get  $number1 of ID $id frame from the result"
     //% weight=65
     export function readeBox(id: number, number1: Content1): number {
         let coco_y = cycle_block(id, 1);
@@ -304,7 +304,7 @@ namespace Aicococam {
     * @param id to id ,eg: 1
     */
 
-    //%block="화살표의 $number1 값"
+    //%block="Aicococam get $number1 arrow from the result"
     //% weight=60
     export function readeArrow(id: 1, number1: Content2): number {
         let coco_y = cycle_arrow(id, 1);
@@ -334,7 +334,7 @@ namespace Aicococam {
      * 지정한 아이디로 자동학습니다.
      * @param id to id ,eg: 1
      */
-    //%block="현재 모드에서 ID %id 자동으로 학습하기"
+    //%block="Aicococam learn ID %id once automatically"
     //% weight=30
     export function writeLearn1(id: number): void {
         writeAlgorithm(id, 0X36)
@@ -343,7 +343,7 @@ namespace Aicococam {
     /**
      * 현재 선택한 모드에서 학습된 데이터를 전부 삭제합니다.
      */
-    //%block="현재 모드에 학습된 모든 데이터 삭제하기"
+    //%block="Aicococam forget all learning data of the current algorithm"
     //% weight=29
     export function forgetLearn(): void {
         writeAlgorithm(0x47, 0X37)
@@ -355,7 +355,7 @@ namespace Aicococam {
      * @param x to x ,eg: 150
      * @param y to y ,eg: 30
      */
-    //%block="코코캠에 텍스트 %name 을(를) 화면 x: %x y: %y 에 출력하기"
+    //%block="Aicococam show custom texts %name at position x %x y %y on screen"
     //% weight=27
     //% x.min=0 x.max=320
     //% y.min=0 y.max=240
@@ -386,7 +386,7 @@ namespace Aicococam {
     /**
      * 코코캠 화면에 출력된 텍스트를 전부 삭제합니다.
      */
-    //%block="코코캠 화면에 출력된 모든 텍스트 삭제하기"
+    //%block="Aicococam clear all custom texts on screen"
     //% weight=26
     export function clearOSD(): void {
         writeAlgorithm(0x45, 0X35);
