@@ -260,7 +260,7 @@ namespace Aicococam {
      * 코코캠 화면에 지정한 ID의 프레임이 있는지 판별합니다.
      * @param id to id ,eg: 1
      */
-    //% block="Aicococam check if ID %id %Ht is on screen from the result"
+    //% block="Aicococam check if ID %id frame is on screen from the result"
     //% weight=75
     export function isAppear(id: number, Ht: COCOCAMResultType_t.COCOCAMResultBlock): boolean {
         switch (Ht) {
@@ -276,7 +276,7 @@ namespace Aicococam {
      * 지정한 ID를 가진 박스의 정보를 읽어옵니다.
      * @param id to id ,eg: 1
      */
-    //%block="Aicococam get  $number1 of ID $id frame from the result"
+    //%block="Aicococam get $number1 of ID $id frame from the result"
     //% weight=65
     export function readeBox(id: number, number1: Content1): number {
         let coco_y = cycle_block(id, 1);
