@@ -1,11 +1,11 @@
-# Ai코코캠(Aicococam)
+# Ai코코캠(Ai COCOCAM)
 
 코코캠은 AI 비전 센서 기능을 통해 다양한 AI프로젝트를 제작하는데 활용할 수 있고, 온라인 교육 및 화상회의용 웹캠으로도 사용하실 수 있습니다.
 
 코코캠은 얼굴 인식, 마스크 인식, 사물 인식, 사물 추적, 컬러인식, 라인 추적, 모델 학습, 태그 인식, 숫자 인식 기능을 사용할 수 있습니다.
 
-cococam can be used to create various AI projects through the AI Vision Sensor function, and can also be used as a webcam for online education and video conferencing.
-cococam can use face recognition, mask recognition, object recognition, object tracking, color recognition, line tracking, model learning, tag recognition, and number recognition functions.
+Ai COCOCAM can be used to create various AI projects through the AI Vision Sensor function, and can also be used as a webcam for online education and video conferencing.
+Ai COCOCAM can use face recognition, mask recognition, object recognition, object tracking, color recognition, line tracking, model learning, tag recognition, and number recognition functions.
 
 
 ## ~ hint
@@ -25,12 +25,12 @@ You can find more information about cococam through the link below.
 ```
 
 * 코코캠은 ``||I2C통신||`` 을 사용해 Makecode와 통신합니다.
-* Coco Cam communicates with Makecode using ``||I2C Communication||``
+* Ai COCOCAM communicates with Makecode using ``||I2C Communication||``
 　
  
 
 * ``||모드 설정||`` 을 통해 코코캠의 모드를 블록으로 변경할 수 있습니다.
-* You can change the mode of the cococam using block on makecode
+* You can change the mode of the Ai COCOCAM using block on makecode
 
 
 
@@ -40,7 +40,7 @@ You can find more information about cococam through the link below.
     Aicococam.initMode(protocolAlgorithm.ALGORITHM_FACE_RECOGNITION)
 ```
 * 코코캠은 ``||시리얼통신||`` 을 사용해 컴퓨터에 결과를 전달할 수 있습니다.
-* cococam can use ``||Serial Communication||`` to deliver results to the computer.
+* Ai COCOCAM can use ``||Serial Communication||`` to deliver results to the computer.
 
 
 ```blocks
