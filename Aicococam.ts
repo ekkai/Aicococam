@@ -262,15 +262,8 @@ namespace Aicococam {
      */
     //% block="Aicococam check if ID %id frame is on screen from the result"
     //% weight=75
-    export function isAppear(id: number, Ht: COCOCAMResultType_t.COCOCAMResultBlock): boolean {
-        switch (Ht) {
-            case 1:
+    export function isAppear(id: number): boolean {
                 return countBlocks(id) != 0 ? true : false;
-            case 2:
-                return countArrows(id) != 0 ? true : false;
-            default:
-                return false;
-        }
     }
     /**
      * 지정한 ID를 가진 박스의 정보를 읽어옵니다.
