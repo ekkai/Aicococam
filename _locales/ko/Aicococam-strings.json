@@ -6,7 +6,7 @@
     "Aicococam.isAppear|block": "코코캠 화면에 ID %id 의 프레임이 있다면",
     "Aicococam.readeBox|block": "ID $id 박스의 $number1 값",
     "Aicococam.readeArrow|block": "화살표의 $number1 값",
-    "Aicococam.getIds|block": "코코캠에 학습된 결과 갯수",
+    "Aicococam.getIds|block": "화면에 인식된 프레임 중 학습된 결과 갯수",
     "Content2.xOrigin|block": "시작점 X",
     "Content2.yOrigin|block": "시작점 Y",
     "Content2.xTarget|block": "끝점 X",
