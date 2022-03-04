@@ -198,7 +198,7 @@ namespace Aicococam {
         processReturn();
     }
     /**
-     * 코코캠에 학습된 결과의 개수를 읽어옵니다.
+     * 코코캠화면에 인식된 프레임 중 학습된 결과의 개수를 읽어옵니다.
      */
     //%block="Aicococam get a total number of learned IDs from the result"
     //% weight=79
