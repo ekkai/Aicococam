@@ -195,6 +195,7 @@ namespace Aicococam {
     //% weight=80
     export function request(): void {
         protocolWriteCommand(protocolCommand.COMMAND_REQUEST)
+        protocolWriteCommand(protocolCommand.COMMAND_REQUEST)
         processReturn();
     }
     /**
