@@ -194,9 +194,10 @@ namespace Aicococam {
     //% block="Aicococam request data once and save into the result"
     //% weight=80
     export function request(): void {
-        protocolWriteCommand(protocolCommand.COMMAND_REQUEST)
-        protocolWriteCommand(protocolCommand.COMMAND_REQUEST)
-        processReturn();
+        for (let i = 0; i < 2; i++) {
+            protocolWriteCommand(protocolCommand.COMMAND_REQUEST)
+            processReturn();
+        }
     }
     /**
      * 코코캠화면에 인식된 프레임 중 학습된 결과의 개수를 읽어옵니다.
