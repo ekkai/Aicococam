@@ -1,4 +1,5 @@
 {
+    /*
     "aicococam.initI2c|block": "코코캠을 I2C통신으로 연결하기",
     "aicococam.initMode|block": "코코캠의 화면을 %mode 로 전환하기",
     "aicococam.request|block": "코코캠에서 데이터 읽어오기",
@@ -40,4 +41,5 @@
     "aicococam.forgetLearn|block": "현재 모드에 학습된 모든 데이터 삭제하기",
     "aicococam.writeOSD|block": "코코캠에 텍스트 %name 을(를) 화면 x: %x y: %y 에 출력하기",
     "aicococam.clearOSD|block": "코코캠 화면에 출력된 모든 텍스트 삭제하기"
+    */
 }
