@@ -130,7 +130,7 @@ enum protocolAlgorithm {
 
 
 //% weight=100  color=#6373F5 icon="\uf06e"  block="Aicococam"
-namespace Aicococam {
+namespace aicococam {
     let protocolPtr: number[][] = [[0], [0], [0], [0], [0], [0], [0], [0], [0], [0]]
     let Protocol_t: number[] = [0, 0, 0, 0, 0, 0]
     let i = 1;
