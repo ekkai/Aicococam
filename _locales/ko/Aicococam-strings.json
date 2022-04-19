@@ -1,5 +1,5 @@
 {
-    "aicococam.initI2c|block": "I2C통신",
+    "aicococam.initI2c|block": "코코캠을 I2C통신으로 연결하기",
     "aicococam.initMode|block": "코코캠의 화면을 %mode 로 전환하기",
     "aicococam.request|block": "코코캠에서 데이터 읽어오기",
     "aicococam.isLearned|block": "코코캠에 ID %id 이(가) 학습되어 있다면",
