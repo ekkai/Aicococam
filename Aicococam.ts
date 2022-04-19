@@ -167,7 +167,7 @@ namespace aicococam {
     }
 
     /**
-     * 
+     * 코코캠을 I2C통신으로 연결하여 사용합니다.
      */
     //%block="Aicococam initialize I2C until success"
     //% weight=90
@@ -178,7 +178,7 @@ namespace aicococam {
         yes();
     }
     /**
-     * 
+     * 코코캠의 모드를 지정한 모드로 변경합니다.
      */
     //%block="Aicococam switch algorithm to %mode"
     //% weight=85
@@ -188,7 +188,7 @@ namespace aicococam {
         yes();
     }
     /**
-     * 
+     * 코코캠에 저장되어 있는 데이터를 읽어옵니다.
      */
     //% block="Aicococam request data once and save into the result"
     //% weight=80
@@ -199,7 +199,7 @@ namespace aicococam {
         }
     }
     /**
-     * 
+     * 코코캠화면에 인식된 프레임 중 학습된 결과의 개수를 읽어옵니다.
      */
     //%block="Aicococam get a total number of learned IDs from the result"
     //% weight=79
