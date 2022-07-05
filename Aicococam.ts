@@ -300,10 +300,10 @@ namespace aicococam {
 
     //%block="Aicococam get $number1 arrow from the result"
     //% weight=60
-    export function readeArrow(id: 1, number1: Content2): number {
-        let coco_y = cycle_arrow(id, 1);
+    export function readeArrow(number1: Content2): number {
+        let coco_y = cycle_arrow(1, 1);
         let coco_x
-        if (countArrows(id) != 0) {
+        if (countArrows(1) != 0) {
             if (coco_y != null) {
 
                 switch (number1) {
