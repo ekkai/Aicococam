@@ -428,7 +428,7 @@ namespace aicococam {
 
     function protocolWrite(buffer: Buffer) {
         pins.i2cWriteBuffer(0x32, buffer, false);
-        //basic.pause(50)
+        basic.pause(50);
     }
 
     function processReturn() {
